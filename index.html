@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Apa coba, kamu bodoh</title>
+</head>
+<body>
+  <h1>Apa coba, kamu bodoh</h1>
+  <p>😈 Kamu barusan masuk perangkap</p>
+
+  <script>
+    fetch("/track", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ ua: navigator.userAgent })
+    })
+  </script>
+</body>
+</html>
